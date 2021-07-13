@@ -1,0 +1,12 @@
+.idea/*
+__pycache__/*
+*env*
+ascap_automation*
+*.html
+*.json
+mycreds
+ppcpred
+*.log
+*.csv
+
+

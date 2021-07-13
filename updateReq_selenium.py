@@ -131,7 +131,7 @@ def main(args):
         # reqs[0].click()
 
         sleep(2)
-        next_arrow_xpath = "//button[@id='PhxGenId_2']"
+        next_arrow_xpath = "/html/body/div[1]/div[4]/div/div[1]/div[2]/div[2]/div/form/div/div[2]/button[2]"
         wait_until_found(driver, next_arrow_xpath)
         next_arrow = driver.find_element_by_xpath(next_arrow_xpath)
         numreqs = 0

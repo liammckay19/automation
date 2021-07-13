@@ -12,5 +12,5 @@ def main():
     all_req_df = pd.read_csv(glob('allRequisitions.tsv')[0], skiprows=1, sep='\t').fillna('')
     dump.update_value('A1', str(datetime.today()))
     dump.update_values('A2', ["Requisition	Requisition Number	Company	Number	Item Description	Catalog Number	Size / Packaging	Unit Price	Quantity	Ext. Price	Date Complete	Purchase Order".split('\t')])
-    dump.update_values('A3',all_req_df.values.tolist())
+    dump.update_values('A3',[all_req_df.values.tolist()])
 main()
